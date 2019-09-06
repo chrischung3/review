@@ -1,0 +1,959 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<meta charset = "utf-8" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  	<title>複習</title>
+  	<link rel='stylesheet' href='./style.css' />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+	
+	<!-- bootstrap Navbar -->
+	<!-- ====================================== -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	  <a class="navbar-brand" href="#">MyReviews</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNav">
+	    <ul class="navbar-nav">
+
+	    <!-- HTML dropdown -->
+	    <!-- ====================================== -->
+	      <li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          HTML
+	        </a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+	          <a class="dropdown-item" href="#html__structure">架構</a>
+	          <a class="dropdown-item" href="#head">Head重要資訊</a>
+	          <a class="dropdown-item" href="#body">Body重要資訊</a>
+	          <a class="dropdown-item" href="#single__select">單選架構</a>
+	          <a class="dropdown-item" href="#textarea__style">textarea 寬度與高度調整</a>
+	          <div class="dropdown-divider"></div>
+	          <a class="dropdown-item" href="#">Something else here</a>
+	        </div>
+	      </li>
+
+
+	    <!-- CSS dropdown -->
+	    <!-- ====================================== -->
+	      <li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          CSS
+	        </a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+	          <a class="dropdown-item" href="#img__background">圖片背景</a>
+	          <a class="dropdown-item" href="#transition">轉場</a>
+	          <a class="dropdown-item" href="#flexbox">Flexbox</a>
+	          <a class="dropdown-item" href="#positioning">定位</a>
+	          <div class="dropdown-divider"></div>
+	          <a class="dropdown-item" href="#">Something else here</a>
+	        </div>
+	      </li>
+
+
+	   	<!-- Javascript dropdown -->
+	   	<!-- ====================================== -->
+	      <li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          Javascript
+	        </a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+	          <a class="dropdown-item" href="#eventListener">Event Listener</a>
+	          <a class="dropdown-item" href="#modifyHTML">修改畫面</a>
+	          <a class="dropdown-item" href="#createDiv">建立新的 div</a>
+	          <a class="dropdown-item" href="#"></a>
+	          <div class="dropdown-divider"></div>
+	          <a class="dropdown-item" href="#">Something else here</a>
+	        </div>
+	      </li>
+
+
+	   	<!-- PHP dropdown -->
+	   	<!-- ====================================== -->
+	      <li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          PHP
+	        </a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+	          <a class="dropdown-item" href="#php__structure">php 架構</a>
+	          <a class="dropdown-item" href="#connection">連結資料庫設定</a>
+	          <a class="dropdown-item" href="#get__data">撈資料</a>
+	          <a class="dropdown-item" href="#get__cookie-info">抓 cookie 資料</a>
+	          <a class="dropdown-item" href="#popup">跳出對話框</a>
+	          <a class="dropdown-item" href="#pwd__hash">用 hash 加密密碼</a>
+	          <div class="dropdown-divider"></div>
+	          <a class="dropdown-item" href="#">Something else here</a>
+	        </div>
+	      </li>
+
+
+	    <!-- mySQL dropdown -->
+	    <!-- ====================================== -->
+	      <li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          mySQL
+	        </a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+	          <a class="dropdown-item" href="#select">查詢</a>
+	          <a class="dropdown-item" href="#insert">新增</a>
+	          <a class="dropdown-item" href="#update">更新</a>
+	          <a class="dropdown-item" href="#delete">刪除</a>
+	          <div class="dropdown-divider"></div>
+	          <a class="dropdown-item" href="#">Something else here</a>
+	        </div>
+	      </li>
+
+
+	    <!-- Combo dropdown -->
+	    <!-- ====================================== -->
+	      <li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          Combo
+	        </a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+	          <a class="dropdown-item" href="#rwd__handmade">RWD 手刻</a>
+	          <a class="dropdown-item" href="#page__division">分頁實作</a>
+	          <a class="dropdown-item" href="#"></a>
+	          <div class="dropdown-divider"></div>
+	          <a class="dropdown-item" href="#">Something else here</a>
+	        </div>
+	      </li>
+
+
+	    <!-- Topics dropdown -->
+	    <!-- ====================================== -->
+	      <li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          Topics
+	        </a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+	          <a class="dropdown-item" href="#box__model">BOX Model</a>
+	          <a class="dropdown-item" href="#cors">CORS</a>
+	          <a class="dropdown-item" href="#ajax">AJAX（含範例）</a>
+	          <a class="dropdown-item" href="#cookie__session">Cookie & Session（含範例）</a>
+	          <a class="dropdown-item" href="#sql__injection">資安-SQL Injection</a>
+	          <a class="dropdown-item" href="#xss">資安-XSS</a>
+	          <a class="dropdown-item" href="#dom">DOM</a>
+	          <a class="dropdown-item" href="#event">事件傳導機制</a>
+	          <a class="dropdown-item" href="#data__structure">設計資料結構</a>
+	          <a class="dropdown-item" href="#include__require">引入檔案</a>
+	          <a class="dropdown-item" href="#http__method">HTTP Method</a>
+	          <a class="dropdown-item" href="#fetch__promise">Fetch & Promise</a>
+	          <div class="dropdown-divider"></div>
+	          <a class="dropdown-item" href="#">Something else here</a>
+	        </div>
+	      </li>
+
+
+	    </ul>
+	  </div>
+	</nav>
+
+
+
+
+	<!-- my content -->
+
+	<a href='./review.html' id='back__top'>top</a>
+	<div class='container-fluid'>
+
+		<!-- HTML content -->
+		<!-- ==================================================== -->
+
+		<div class='jumbotron'>
+			<div class='section__title' id='html'>HTML 基本格式</div>
+			<hr/>
+				<div class='section__sub-title' id='html__structure'> 架構 </div>
+				<div class='code'>
+					<pre><code>
+&lt!DOCTYPE HTML&gt
+
+&lthtml&gt
+&lthead&gt
+  --- head content ---
+&lt/head&gt
+&ltbody&gt 
+  --- body content ---
+&lt/body&gt
+&lt/html&gt
+					</code></pre>
+				</div>
+
+				<hr/>
+				<div class='section__sub-title' id='head'>Head重要資訊</div>
+				<p>直接 copy 去用</p>
+					<div class='section__bullet-points'> 導入 CSS </div>
+						<pre><code>
+&ltlink rel='stylesheet' href='./style.css'&gt 
+						</code></pre>
+					<div class='section__bullet-points'> 導入 jQuery </div>
+						<pre><code>
+&ltscript src="https://code.jquery.com/jquery-3.4.1.min.js"&gt&lt/script&gt
+						</code></pre>
+					<div class='section__bullet-points'> 導入 Bootstrap </div>
+						<pre><code>
+&ltlink rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"&gt
+&ltscript src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"&gt&lt/script&gt
+&ltscript src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"&gt&lt/script&gt
+						</code></pre>
+
+				<hr/>
+				<div class='section__sub-title' id='body'>Body重要資訊</div>
+				<p>直接 copy 去用</p>
+
+					<div class='section__bullet-points'> 導入 Javascript </div>
+					<p>這部分要放在 body 的最後一行 </p>
+						<pre><code>
+&ltscript src="./index.js"&gt&lt/script&gt
+						</code></pre>
+
+
+				<hr/>
+				<div class='section__sub-title' id='single__select'>單選架構</div>
+					<pre><code>
+&ltlabel&gt   // 包在 label 裡面讓整個區域都可以被點選
+    &ltinput class='check' type='radio' id='option1'&gtOption1  // type=radio 單選
+&lt/label&gt
+&ltlabel&gt
+    &ltinput class='check' type='radio' id='option2'&gtOption2
+&lt/label&gt
+					</code></pre>
+
+				<hr/>
+				<div class='section__sub-title' id='textarea__style'>Textarea 寬度與高度調整</div>
+					<p>比較常見的方式是定義 rows='n' cols='m' 的方式，但是改用 css 的方式來重新設計比較容易，例如：</p>
+					<pre><code>
+&lttextarea name='content' style='width:500px;height:80px'>&lt/textarea>
+					</code></pre>
+
+		</div> <!-- HTML 的 closing div-->
+
+
+
+
+		<!-- CSS content -->
+		<!-- ==================================================== -->
+
+		<div class='jumbotron'>
+			<div class='section__title' id='css'>CSS 基本</div>
+				<hr/>
+				<div class='section__sub-title' id='img__background'>圖片背景</div>
+				<pre><code>
+background-size: 100px 100px;  —> 可以設定 bg 大小
+background-size: 50% 50%;   50% 是這個 div 的 50%
+background-size: contain;  圖片比例不改
+background-size: cover; 圖片比例不改以外填滿這個 div
+				</code></pre>
+
+				<hr/>
+				<div class='section__sub-title' id='transition'>轉場</div>
+				<p>在該物件上設定轉場的範圍跟時間，然後在「物件:hover」裡面設定轉場的效果</p>
+				<pre><code>
+#box1{
+    background: green;
+    <span>transition: all 0.5s;</span>
+}
+
+#box1:hover{
+    background: blue;
+    cursor: pointer;
+}
+				</code></pre>
+
+				<hr/>
+				<div class='section__sub-title' id='flexbox'>Flexbox</div>
+					<div class='section__bullet-points'>橫向排序</div>
+						<pre><code>
+justify-content:flex-end (全部靠右）
+justify-content:flex-start (全部靠左)
+justify-content:center (中間)
+justify-content:space-between (物件與物件中間都加空格)
+justify-content:space-around (每個物件左右都加空格)
+						</code></pre>
+					<div class='section__bullet-points'>上下排序</div>
+						<pre><code>
+align-items:flex-start (全部靠上）
+align-items:flex-end (全部靠下)
+align-items:center
+align-items:baseline
+align-items:stretch
+						</code></pre>
+					<div class='section__bullet-points'>另一種上下排序？<span class="badge badge-pill badge-danger">Lookup</span></div>
+						<pre><code> <!-- *** -->
+align-content:flex-start (全部的行都集中在區塊上面)
+align-content:flex-end (全部的行都集中在區塊下面)
+align-content:center 
+align-content:space-between (行距相等，上下靠邊)
+align-content:space-around (行距相等，上下也有行距)
+align-content:stretch (拉大行距字距塞滿區塊）	
+						</code></pre>
+
+				<div class='section__sub-title' id='positioning'>定位</div>
+					<div class='section__bullet-points'>Static & Relative</div>
+						<p>預設都是 Static，從 viewport 最左上角開始，如果有 margin 就加 margin 的高度，然後再加上 content 的高度，然後下一個元素就從這個點繼續加。</p>
+						<p>Relative 是可以 base on static 產生的畫面之後再去調整，可以在不影響其他元素的情況下調整。</p>
+					<div class='section__bullet-points'>Absolute & Fixed</div>
+						<p>Absolute & Fixed 是相對於瀏覽器（或 viewport）做定位。</p>
+						<p>如果要在針對某一個元件定位，e.g.這個按鈕要在這個 div 的右下角，程式如下：</p>
+						<pre><code>
+div {
+    postiion: relative;
+}
+
+.btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+						</code></pre>
+					<p>更詳細的介紹可以看<a href='#position'>這裡</a></p>
+
+		</div> <!-- CSS 的 closing div-->
+
+
+
+
+
+		<!-- Javascript content -->
+		<!-- ==================================================== -->
+
+		<div class='jumbotron'>
+			<div class='section__title' id='Javascript'>Javscript</div>
+				<hr/>
+				<div class='section__sub-title' id='eventListener'> Event Listener</div>
+					<p>更多詳細資訊可以看<a href='#event'>事件傳導機制</a></p>
+					<div class='section__bullet-points'>Vanilla Js 範例</div>
+						<pre><code>
+const btn = document.querySelector('.btn');   // 選到了 class=btn 的這個物件
+btn.addEventListener('click', () => {         // 為這個物件加上 event listener，發生了 click 之後執行 callback function
+    callback function;
+}
+						</code></pre>
+
+
+					<div class='section__bullet-points'>回首頁範例（點選按鈕回首頁）</div>
+						<pre><code>
+const homePage = (() => {
+    window.open('./homepage.html', '_self');
+});
+
+document.querySelector('.btn').addEventListener('click', homePage);
+						</code></pre>
+
+				<hr/>
+				<div class='section__sub-title' id='modifyHTML'>修改畫面</div>
+					<div class='section__bullet-points'>Vanilla Js 範例</div>
+						<pre><code>
+const btn = document.querySelector('.btn');
+const body = document.querySelector('body');
+
+btn.style.visibility = 'visible'; 	// 修改 visibility
+btn.innerText = '再試一次';		// 修改文字內容
+body.style.background = 'white';	// 修改背景內容
+						</code></pre>
+
+				<hr/>
+				<div class='section__sub-title' id='createDiv'>建立新的 div</div>
+				<p>範例包含 AJAX </p>
+					<pre><code>
+const request = new XMLHttpRequest();
+const postArea = document.querySelector('.post__area');
+
+request.onload = function () {
+  if (request.status >= 200 && request.status < 400) {
+    const response = request.responseText;
+    const json = JSON.parse(response);
+    for (let i = 0; i < json.length; i += 1) {
+      <span>const div = document.createElement('div');</span>  // 建立新的 div
+      <span>div.classList.add('posts');</span>    // 設定 class
+      <span>div.innerHTML = `</span>
+          <span>&ltdiv class='id'&gt${json[i].id}&lt/div&gt</span>
+          <span>&ltdiv class='content'&gt</span>
+            <span>&ltdiv class='content__title'&gt留言內容&lt/div&gt</span>
+            <span>&ltdiv class='content__text'&gt${json[i].content}&lt/div&gt</span>
+          <span>&lt/div&gt</span>
+          <span>`</span>;
+      postArea.appendChild(div);  // 最後把 div 加到某個區域之後
+    }
+  }
+}
+					</code></pre>
+
+		</div> <!-- Javascript 的 closing div-->
+
+
+
+
+		<!-- PHP content -->
+		<!-- ==================================================== -->
+
+		<div class='jumbotron'>
+			<div class='section__title' id='php'>PHP 基本</div>
+				<hr/>
+				<div class='section__sub-title' id='php__structure'>PHP 基本架構</div>
+				<div class='section__bullet-points'>全部都 PHP 的話</div>
+					<pre><code>
+&lt?php
+  --- PHP content ---
+?&gt
+					</code></pre>
+				<div class='section__bullet-points'>中間夾雜 HTML</div>
+				<p>可以用 echo 的方式</p>
+					<pre><code>
+&lt?php
+    echo "&ltdiv class='new' &gtnew div&lt/div&gt";
+?&gt
+					</code></pre>
+				<p>或者可以穿插使用</p>
+					<pre><code>
+<span>&lt?php</span>
+    if(isset($_COOKIE['username'])){
+        $sql = "SELECT * from chrischung2_users WHERE username = '$_COOKIE[username]'";
+        $result = $conn->query($sql);
+        $row = $result->fetch_assoc();
+<span>?&gt</span>
+        &ltform method='POST' action='./handle_add.php'&gt
+            &ltdiv&gt你想說什麼：&lttextarea name='content' rows='10'&gt&lt/textarea&gt&lt/div&gt
+            &ltinput type='hidden' name='user_id' value="<span>&lt?php echo $row['id'] ?&gt</span>" /&gt
+            &ltinput type='submit' value='送出' /&gt
+        &lt/form&gt
+<span>&lt?php</span>
+    } else {
+        header("Location: ./login.php?Message=" . '請先登入！');
+    }
+<span>?&gt</span>
+					</code></pre>
+				<hr/>
+				<div class='section__sub-title' id='connection'>連結資料庫設定</div>
+					<div class='section__bullet-points'>在 conn.php 裡面（範例）</div>
+						<pre><code>
+&lt?php
+
+$servername = 'servername';    //連自己電腦的 php 的話 servername 就是 localhost
+$username = 'username';        //沒特別設定的話自己電腦 username 是 root
+$password = 'password';        //沒特別設定的話自己電腦 password 是 ''(沒有密碼)
+$dbname = 'dbname';            //現在自己連到 php 裡面的 mentor db
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+$conn->query('SET NAMES UTF8');
+
+if($conn->connect_error) {
+    die('connection failed: ' . $conn->$connect_error);
+}
+
+?&gt
+						</code></pre>
+					<div class='section__bullet-points'>在 index.php 裡面</div>
+						<pre><code>
+require_once('./conn.php');   // 用 require_once 引入
+						</code></pre>
+					<p>可以看<a href='#include__require'>這裡</a>了解 require_once</p>
+
+				<hr/>
+				<div class='section__sub-title' id='get__data'>撈資料</div>
+					<div class='section__bullet-points'>一般方式</div>
+					<p>先設定 mySQL 指令之後再 fetch</p>
+						<pre><code>
+$sql = SELECT * from USERS WHERE id = 3;
+$result = conn->query($sql);
+$row = $result->fetch_assoc();
+						</code></pre>
+					<p>之後就可以直接 $row['dataname'] 引用資料</p>
+					<div class='section__bullet-points'>防止SQL injection</div>
+					<p>防止別人駭資料，詳細內容見 <a href=#sql__injection>SQL injection</a></p>
+						<pre><code>
+// original
+$sql = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
+$result = $conn->query($sql);
+
+// with prepare statement
+<span>$stmt</span> = "SELECT * FROM users WHERE username = <span>?</span> AND password = <span>?</span>";
+<span>$stmt->bind_param("ss", $username, $password);</span> // 兩個 string 所以 "ss"
+<span>$stmt->execute();</span>
+<span>$result = $stmt->get_result();</span>
+						</code></pre>
+
+				<hr/>
+				<div class='section__sub-title' id='get__cookie-info'>抓 cookie 資料</div>
+				<p> Cookie 裡面紀錄的資料都是 key: value，所以用一下的指令就可以抓資料</p>
+					<pre><code>
+$_COOKIE['key']
+					</code></pre>
+				<p>範例</p>
+					<pre><code>
+if(isset($_COOKIE['username'])) {
+    $sql = "SELECT * from users WHERE username = '$_COOKIE[username]'";
+}
+					</code></pre>
+
+				<hr/>
+				<div class='section__sub-title' id='popup'>跳出對話框</div>
+					<p>如果要做出類似「登入成功時跳出對話框顯示登入成功並且跳轉頁面」的功能的話，首先要在跳轉前頁面，例如登入頁面，在跳轉的地方輸入以下指令：</p>
+					<pre><code>
+if(登入成功){
+    header("Location: ./index.php?Message=" . '登入成功！歡迎！');
+} else {
+    header("Location: ./login.php?Message=" . '帳號密碼錯誤，請重新登入！');
+}
+					</code></pre>
+					<p>然後在目標頁面，例如 index.php 或 login.php 頁面在最上面加入</p>
+					<pre><code>
+if (isset($_GET['Message'])) {
+    print '&ltscript type="text/javascript"&gtalert("' . $_GET['Message'] . '");&lt/script&gt';
+					</code></pre>
+
+				<hr/>
+				<div class='section__sub-title' id='pwd__hash'>用 hash 加密密碼</div>
+					<div class='section__bullet-points'>加密</div>
+						<pre><code>
+$password = $_POST[‘password];
+$hash = password_hash($password, PASSWORD_DEFAULT);
+						</code></pre>
+					<div class='section__bullet-points'>驗證</div>
+						<pre><code>
+if(password_verify($password, $hashed_password)) {
+    // If the password inputs matched the hashed password in the database
+    // Do something, you know... log them in.
+} else {
+    // Wrong Password
+}							
+						</code></pre>
+		</div> <!-- PHP content 的 closing div-->
+
+
+
+
+
+		<!-- mySQL content -->
+		<!-- ==================================================== -->
+
+		<div class='jumbotron'>
+			<div class='section__title' id='mySQL'>mySQL 基本</div>
+				<hr/>
+				<div class='section__sub-title' id='select'>查詢</div>
+				<p>查詢一個 table 的資料</p>
+					<pre><code>
+<span>SELECT</span> * <span>FROM</span> table_name <span>WHERE</span> condition
+<span>SELECT</span> * <span>FROM</span> table_name <span>WHERE</span> condition1 <span>AND/OR</span> condition2
+					</code></pre>
+				<p>查詢結果加上排序</p>
+					<pre><code>
+SELECT * FROM table_name <span>ORDER BY</span> condition <span>DESC</span>  // DESC 代表降冪排列
+					</code></pre>
+				<p>查詢兩個關聯 table 的資料</p>
+					<pre><code>
+SELECT * FROM table_name1 <span>as</span> A <span>LEFT JOIN</span> table_name2 <span>as</span> B <span>ON</span> A.column_name = B.column_name
+					</code></pre>
+				<p>資料多的時候要善用 as 來區隔</p>
+					<pre><code>
+SELECT A.id <span>as</span> userID, B.id <span>as</span> articleID from table_name1 <span>as</span> A LEFT JOIN table_name2 <span>as</span> B ON B.user_id = A.id
+					</code></pre>
+
+
+				<hr/>
+				<div class='section__sub-title' id='insert'>新增</div>
+				<p>在 table 裡面新增一筆資料</p>
+					<pre><code>
+<span>INSERT INTO</span> table_name(column_name1, column_name2) <span>VALUES</span> (value1, value2)
+					</code></pre>
+
+				<hr/>
+				<div class='section__sub-title' id='update'>更新</div>
+				<p>更新 table 裡面的某一筆資料。如果沒有 specify 哪一個的話，全部的資料都會被改變</p>
+					<pre><code>
+<span>UPDATE</span> table_name <span>SET</span> column_name1 = value1 <span>WHERE</span> column_name2 = value2
+					</code></pre>
+
+				<hr/>
+				<div class='section__sub-title' id='delete'>刪除</div>
+				<p>這裡只紀錄語法，但在實作上不會刪除資料，而是會在 table 中加一個欄位為標示這筆資料是否 activate</p>
+					<pre><code>
+<span>DELETE FROM</span> table_name <span>WHERE</span> column_name = value
+					</code></pre>
+
+
+		</div> <!-- mySQL content 的 closing div-->
+
+
+
+
+		<!-- combo content -->
+		<!-- ==================================================== -->
+
+		<div class='jumbotron'>
+			<div class='section__title' id='combo'>組合技</div>
+				<hr/>
+				<div class='section__sub-title' id='rwd__handmade'> RWD手刻</div>
+					<div class='section__bullet-points'>HTML</div>
+					<p>先在 head 加這一段</p>
+						<pre><code>
+&ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt 
+						</code></pre>
+					<div class='section__bullet-points'>CSS</div>
+					<p>若螢幕寬度小於 750px 就會變成以下設定的樣子</p>
+						<pre><code>
+@media screen and (max-width: 750px) {
+    .pack{
+        display: block;
+        max-width: 100%;
+        margin-top: n px;
+    }
+}
+						</code></pre>
+			<hr/>
+				<div class='section__sub-title' id="page__division">分頁實作</div>
+					<div class='section__bullet-points'>分頁設定</div>
+						<pre><code>
+&lt?php
+    $pages_sql = "SELECT * from chrischung2_msgBoard";
+    $result = $conn->query($pages_sql);
+	
+    $posts = $result->num_rows;  // 總 PO 文數
+    $per = 10; // 每頁 10 PO 文
+    $total = ceil($posts/$per);
+    if(!isset($_GET['page'])){
+        $page = 1;
+    } else {
+        $page = intval($_GET['page']);
+    }
+
+    $start = ($page-1)*$per; //每一頁開始的資料序號
+?&gt
+						</code></pre>
+					<div class='section__bullet-points'>顯示分頁按鈕</div>
+						<pre><code>
+&lt?php
+    echo "頁數";
+    for($i = 1; $i <= $total; $i++ ) {
+        echo "&lta href='./index.php?page=$i'> " .$i . " &lt/a>";
+    }
+?&gt
+						</code></pre>
+					<div class='section__bullet-points'>依照分頁顯示內容</div>
+						<pre><code>
+&lt?php
+    $sql = "
+        SELECT U.username, U.nick, M.content, M.created_at, M.id 
+        FROM chrischung2_users as U 
+        LEFT JOIN chrischung2_msgBoard as M 
+        ON M.user_id = U.id 
+        ORDER BY created_at DESC 
+        LIMIT $start, $per  <span>//limit M, N 意思就是跳過 M 條，然後從 M+1條開始擷取 N 條</span>
+    ";
+
+    $result = $conn->query($sql);
+    if($result->num_rows <= 0) {
+        echo "error" . $conn->error;
+    } else {
+        // show result;
+    }
+?&gt
+						</code></pre>
+
+
+		</div> <!-- Combo 的 closing div-->
+
+
+
+
+
+		<!-- Topics content -->
+		<!-- ==================================================== -->
+
+		<div class='jumbotron'>
+				<div class='section__title'>重要名詞解釋</div>
+			<hr/>
+				<div class='section__sub-title' id='box__model'>BOX Model</div>
+				<div class='section__bullet-points'>自己的盒子組成</div>
+				<p>HTML 的每一個 div 的內容都可以視為一個 box，而針對這個 box 我們就可以調整他的 margin、border、padding、content 等各個屬性。我自己會以 border 為分野，border 就是外框。margin 在 border 的外面，所以 margin 是這個物件跟其他物件的距離。padding 在 border 的裡面，所以 padding 就是 content 到 border 的距離。</p>
+				<img src='https://mdn.mozillademos.org/files/13647/box-model-standard-small.png' class='content__img'>
+				<div class='section__bullet-points' id='position'>盒子排在一起之 Display</div>
+				<p>
+					<h6>BLOCK</h6>
+					元素以區塊的方式呈現。可以調整區塊的長寬及邊距。但是一個區塊就會佔滿一整行，其他物件都會換行。 有些 tag default 用 block display，如 div、p、h1～h6、ul 等。
+				</p>
+				<p>
+					<h6>INLINE</h6>
+					元素以橫向並排的方式呈現，但是沒辦法調整區塊的長寬及邊距。 有些 tag default 用 inline display，如 a、span 等。
+				</p>
+				<p>
+					<h6>INLINE-BLOCK</h6>
+					元素仍以區塊的方式呈現，但是如同 block 一樣，可以調整區塊的長寬及邊距。 透過 css，什麼tag 都可以用 inline-block 的方式呈現。</p>
+				</p>
+
+				<div class='section__bullet-points' id='position'>盒子排在一起之 Position</div>
+				<p>
+					<h6>STATIC</h6>
+					所有元素的預設值。都是從 viewport 的最上角開始，第一個元素有多少 margin、block、padding、content 寬度，這些寬度加完之後，第二個元素就從這裡開始，以此類推。
+				</p>
+				<p>
+					<h6>RELATIVE</h6>
+					元素仍然在其預設值的地方，但是可以透過 top、bottom、left、right 去調整顯示的地方。
+				</p>
+				<p>
+					<h6>ABSOLUTE</h6>
+					元素會以上層非 static 的元素為定位基準。但如果上層沒有符合的元素，則會根據 body 定位。用 absolute 的話，該元素會從排版流程中被拔出，下一個元素會遞補他的位子。
+				</p>
+				<p>
+					<h6>FIXED</h6>
+					以目前的 viewport 定位，固定在固定位置，不會因為滾動捲軸拉動而改變位置。常見使用 fixed display 的元素有廣告，或者是客服聊天視窗等。
+				</p>
+
+			<hr/>
+				<div class='section__sub-title' id='cors'>CORS</div>
+				<p>還沒有寫，瀏覽器提供，所以如果直接用 node.js 傳送 request 並不會遇到 CORS，但 img 不被 CORS 限制</p>
+				<!-- *** --> 
+			<hr/>
+				<div class='section__sub-title' id='ajax'>AJAX</div>
+				<p>什麼是 AJAX? Asynchronous JavaScript and XML 的簡稱。 Asynchronous，非對稱，讓網頁不會因為 server 的 response 太慢而卡住。一個例子就像是我打電話給朋友問一件事情但是他沒有接，因此我可以先留言，等他有空了再回電，而我就不需要一直打到他接電話為止，可以先去做其他事情。</p>
+				<p>用 Ajax 與我們用表單送出資料的差別在哪？如果用 Ajax，server 回傳的資料會透過 browser 再回傳到 JavaScript 手上。如果用表單的話，Server 回傳的資料會直接在 browser 被 render 出來（對使用者來看就是直接換頁的感覺。）</p>
+				<div class='section__bullet-points'>範例</div>
+				<pre><code>
+const request = new XMLHttpRequest();
+const btn = document.querySelector('.btn');
+
+btn.onclick = () =>{
+    if(request.status >=200 && request.status < 400) {
+        console.log(request.responsetext);
+    } else {
+        console.log(failed);
+    }
+}
+
+request.open('GET', 'https://dvwhnbka7d.execute-api.us-east-1.amazonaws.com/default/lottery', true);    // HTTP Method, url, 是否非同步
+request.send();
+				</code></pre>
+
+			<hr/>
+				<div class='section__sub-title' id='cookie__session'>Cookie & Session</div>
+				<div class='section__bullet-points'>Cookie</div>
+					<p>Cookie 單純只是存放一些資料的地方，用以辨別使用者的特性。</p>
+					<h6>設定 cookie</h6>
+						<pre><code>
+&lt?php
+setcookie('username', $_POST['username'], time()+3600*24)); // 從 form 發出來的 username 設定到 cookie 裡面, 並且在時間到期後失效
+?&gt
+						</code></pre>
+					<h6>刪除 cookie</h6>
+						<pre><code>
+&lt?php
+setcookie('username', '', time()-3600*24));   // 直接把值設成空字串
+?&gt
+						</code></pre>
+
+					<p>但是如果用 Cookie 中存放使用者資訊做為登入驗證的話很危險，例如：</p>
+						<pre><code>
+&lt?php
+if(isset($_COOKIE['username'])) {
+    $sql = "SELECT * from users WHERE username = '$_COOKIE[username]'";
+    $result = $conn->query($sql);
+    $row = $result->fetch_assoc();
+    ...
+}
+?&gt
+						</code></pre>
+					<p>因為 Cookie 的資訊是可以被竄改的，駭客可以直接竄改 username 成一個已知的資訊，就可以成功登入那個人的帳號。</p>
+				<div class='section__bullet-points'>Session</div>
+					<p>Session 是由伺服器產生的通行證，產生之後會自動在 cookie 裡面放進 session ID，然後每次這個瀏覽器發 request 的時候會帶上 cookie，並由伺服器驗證通行證是否 valid。</p>
+						<pre><code>
+&lt?php
+session_start();
+$sid = session_id();
+echo $sid;				// 03b6de3b83602355e3077453a2d699dc
+echo $_COOKIE[‘PHPSESSID’];		// 03b6de3b83602355e3077453a2d699dc
+?&gt
+						</code></pre>
+					<p>上面的範例顯示在執行 session_start(); 之後 session ID 已經被建立，並且被存在 Cookie 裡面 PHPSESSID 的值裡面。</p>
+
+			<hr/>
+				<div class='section__sub-title' id='sql__injection'>資安-SQL Injection</div>
+					<div class='section__bullet-points'>介紹</div>
+						<p>駭客可以在輸入帳號密碼的地方輸入特定字串，就可以撈出所有資料。例如我們原本的 code 是希望使用者輸入之後變這樣：</p>
+						<pre><code>
+$sql = SELECT * FROM users WHERE username='<span>chris</span>' AND password='<span>123</span>'
+						</code></pre>
+						<p>但是如果使用者輸入以下指令的話：</p>
+						<pre><code>
+$sql = SELECT * FROM users WHERE username='<span>' or 1=1 -- '</span>' AND password=''
+						</code></pre>
+						<p>電腦會解讀成：</p>
+						<pre><code>
+$sql = <span>SELECT * FROM users WHERE username='' or 1=1 </span>-- '' AND password=''
+						</code></pre>
+						<p>因為 1=1 永遠成立，所以就可以撈出所有的資料了。</p>
+					<div class='section__bullet-points'>解法</div>
+						<p>用 prepare statement，<a href='https://www.w3schools.com/php/php_mysql_prepared_statements.asp'>介紹</a>，範例如下：</p>
+						<pre><code>
+// original
+$sql = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
+$result = $conn->query($sql);
+
+// with prepare statement
+<span>$stmt</span> = "SELECT * FROM users WHERE username = <span>?</span> AND password = <span>?</span>";
+<span>$stmt->bind_param("ss", $username, $password);</span> // 兩個 string 所以 "ss"
+<span>$stmt->execute();</span>
+<span>$result = $stmt->get_result();</span>
+					</code></pre>
+
+			<hr/>
+				<div class='section__sub-title' id='xss'>資安-XSS</div>
+					<div class='section__bullet-points'>介紹</div>
+						<p>什麼時候容易發生？例如留言板，如果我們直接 echo 出使用者輸入的資訊，而使用者如果輸入的是程式指令，那程式就會被執行。例如，如果有人輸入:</p>
+						<pre><code>
+&ltscript>alert(1)&lt/script>
+						</code></pre>
+						<p>那每一個人進入這個畫面就會看到這個跳出來的對話框。而如果惡意使用者輸入的是導向網址，那每個使用者就會被導到惡意的網站</p>
+					<div class='section__bullet-points'>解法</div>
+						<p>用 htmlspecialchars。範例如下：</p>
+						<pre><code>
+echo <span>htmlspecialchars($str, ENT_QUOTES, 'utf-8');</span>
+						</code></pre>
+						<p>所以如果我們是要撈出 echo $row['content'] 的話，可以改成：</p>
+						<pre><code>
+echo htmlspecialchars(<span>$row['content']</span>, ENT_QUOTES, 'utf-8');
+						</code></pre>
+						<p>甚至可以把這個加到 utils.php 裡面去：</p>
+						<pre><code>
+function escape($str){
+    htmlspecialchars($str, ENT_QUOTES, 'utf-8');
+}
+						</code></pre>
+						<p>之後使用就可以直接</p>
+						<pre><code>
+echo escape($row['content']);
+						</code></pre>
+
+			<hr/>
+				<div class='section__sub-title' id='dom'>DOM</div>
+				<p>DOM 是 Document Object Model，是瀏覽器提供的橋樑，讓我們可以用 JavaScript 去 access HTML 和 CSS。 HTML 和 CSS 都是階層式的概念，而把這樣的內容很雷同於 JavaScript 中物件的概念，因此透過 DOM 的方式讓 JavaScript 存取 HTML 及 CSS 的內容，並針對裡面的元素去改動或增減。</p>
+
+			<hr/>
+				<div class='section__sub-title' id='event'>事件傳導機制</div>
+					<div class='section__bullet-points'>傳導三階段</div>
+						<p>傳導三個階段為	capture（捕獲）、at target、bubble（冒泡）。在點擊一個元素的時候，事件會從根節點開始往下去找到點擊的物件（target），這個階段就是捕獲的階段。 而捕獲之後，事件會再從子節點往上傳回根節點，這就是冒泡的過程。 在 addEventListener() 裡面第三個參數是 boolean：其中 true 代表把這個 listener 添加到捕獲階段，false 或是沒有傳就代表把這個 listener 添加到冒泡階段。下圖的範例是如果把 eventlistener 加在&lttd&gt上的過程。</p>
+						<img src='https://www.w3.org/TR/DOM-Level-3-Events/images/eventflow.svg' class='content__img'>
+					<div class='section__bullet-points'>Event Delegation</div>
+						<p>event delegation 就是當我們有一堆節點想要加 eventListener 的時候，可以找這群節點的 parent node 加 eventListener，目的是可以減少監聽數。 例如在計算機作業中，我們就是在 .btn-pad 上加 eventListener，而不是對裡面的 15 個 .btn 加 eventListener。</p>
+					<div class='section__bullet-points'>Event.preventDefault() 和 Event.stopPropagation()</div>
+						<p>event.stopPropagation() 的作用在於停止事件的傳遞到下一個節點，但是如果同個節點有其他的 EventListener 還是會執行，除非將指令改成 event.stopImmediatePropagaion()。 event.preventDefault() 的作用在與阻止瀏覽器預設的行為發生。跟時間傳遞沒關係。例如在某個 text input，如果我們要規範裡面只能有小寫，可以用 e.preventDefault()，讓使用者沒辦法輸入大寫（順便跳個 alert 提醒他），就不用到最後 submit 的時候才檢查。</p>
+
+			<hr/>
+				<div class='section__sub-title' id='data__structure'>設計資料結構</div>
+				<!-- *** -->
+
+
+			<hr/>
+				<div class='section__sub-title' id='include__require'>引入檔案</div>
+				<p>include：引入檔案時若錯誤，會出現錯誤訊息，但是程式不會停止。</p>
+				<p>include_once：與 include 相同，但是可以避免重複引入。</p>
+				<p>require：引入檔案時若錯誤，會出現錯誤訊息，且程式不會停止。</p>
+				<p>require_once：與 require 相同，但是可以避免重複引入。</p>
+
+
+			<hr/>
+				<div class='section__sub-title' id='http__method'>HTTP Method</div>
+				<p>完整名稱是「HTTP request method」，而 HTTP 是「用戶端（用戶）和伺服器端（網站）之間請求和應答的標準」。透過瀏覽器等 user agent 向 server 發出請求，以完整的執行 CRUD（Create、Read、Update、Delete）。</p>
+					<div class='section__bullet-points'>GET/HEAD（=Read）</div>
+					<p> GET method 是獲取被請求 <a href='https://zh.wikipedia.org/zh-tw/%E7%BB%9F%E4%B8%80%E8%B5%84%E6%BA%90%E6%A0%87%E5%BF%97%E7%AC%A6'>URI</a> 指定的信息，向指定的資源發出「顯示」請求。使用GET方法應該只用在讀取資料。而 HEAD method 跟 GET 差不多，但只是伺服器不會回應 body 的部分，只會回應 header，它的好處在於，使用這個方法可以在不必傳輸全部內容的情況下，就可以取得其中「關於該資源的訊息」（元訊息或稱元資料）。</p>
+					<div class='section__bullet-points'>POST（=Create）</div>
+					<p>向指定資源提交資料，請求伺服器進行處理（例如提交表單或者上傳檔案）。資料被包含在請求本文中。這個請求可能會建立新的資源或修改現有資源，或二者皆有。</p>
+					<div class='section__bullet-points'>PUT（=Update）</div>
+					<p>向指定資源位置上傳其最新內容。</p>
+					<div class='section__bullet-points'>DELETE（=Delete）</div>
+					<p>請求伺服器刪除Request-URI所標識的資源。</p>
+					<div class='section__bullet-points'>注意事項</div>
+					<ul>
+						<li>網址後面的 「?id=xx」 就是 GET method
+						</li>
+						<li>發出 request 跟接收 request 的 method 要相同，例如我如果用 GET 發出 request，server 那一端就要用 GET 接收 request。
+						</li>
+					</ul>
+
+			<hr/>
+				<div class='section__sub-title' id='fetch__promise'>Fetch & Promise</div>
+					<div class='section__bullet-points'>Fetch</div>
+					<p>Fetch 某程度來說就是新的 XMLHttpRequest。直接舉一個 jsonplaceholder （online open api）的例子：</p>
+					<pre><code>
+<span>fetch(</span>'https://jsonplaceholder.typicode.com/posts/1'<span>)</span>;
+					</code></pre>
+					<p>這就是用 AJAX 的 GET method。再加上個 callback function：</p>
+					<pre><code>
+fetch('https://jsonplaceholder.typicode.com/posts/1’)
+    <span>.then(function(response) {</span>
+        console.log(response);
+<span>}</span>)
+					</code></pre>
+					<p>上面這個範例中的 .then 有些特性：1. 可以接著用；2. 前面return的result可以直接拿來用。例如：</p>
+					<pre><code>
+.then(() => {
+    return 123
+})
+.then((result) => {          
+    console.log(result);    //123
+})
+					</code></pre>
+
+					<p>可以把 response 變成 JSON 格式：</p>
+					<pre><code>
+fetch('https://jsonplaceholder.typicode.com/posts/1’)
+    .then(function(response) {
+        return response<span>.json()</span>;
+})
+					</code></pre>
+
+					<p>成功的話可以用 .then() 接收，失敗的話要用 .catch() 接住：</p>
+					<pre><code>
+fetch('https://jsonplaceholder.typicode.com/posts/1’)
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(result){
+        console.log(result);
+    })
+    <span>.catch(function(err){
+        console.log(‘err’, err);
+    }</span>)
+					</code></pre>
+
+				<div class='section__bullet-points'>Promise</div>
+					<p>Promise 是 Fetch 之後的回傳值。如果</p>
+					<pre><code>
+const api = fetch(‘url’);
+console.log(api);
+					</code></pre>
+
+					<p>就會在 console 那裡看到 promise。</p>
+					<p>Promise 的三個狀態：pending (還在等著被執行) fulfilled (resolve 被呼叫之後)  rejected (reject被呼叫之後)</p>
+					<p>Promise 的範例：</p>
+					<pre><code>
+const sleep = new <span>Promise(function(resolve, reject) { </span>   //成功的話 resolve() 失敗的話 reject()
+    setTimeout(() => {
+        resolve('sleep 3 seconds')      
+    }, 3000)
+<span>}</span> );
+
+sleep.then((result) => {
+    console.log(result);
+}).catch(err => {
+    console.log('err', err);
+})
+					</code></pre>
+
+
+		</div> <!-- topics 的 closing div -->
+	</div> <!--.container-fluid 的 closing div -->
+
+</body>
+</html>
